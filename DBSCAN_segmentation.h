@@ -57,7 +57,7 @@ public:
 	}
 	////检查近邻点，并将近邻点压入向量
 	////n*n的复杂度，耗时较长可以用KDtree改进
-	////实验后暴力搜索法耗时50s,kdtree耗时0.1s
+	////实验后暴力搜索法耗时50s,kdtree耗时0.106s
 	// void checkNearPoints() {
 	//	clock_t cnp_0, cnp_1;
 	//	cnp_0 = clock();
@@ -78,7 +78,7 @@ public:
 	
 	
 	//利用kdtree-flann的方法寻找最近点
-	//36000点用时0.1s,若用暴力搜索方法用时50s
+	//36000点用时0.106s,若用暴力搜索方法用时50s
 	 void checkNearPoints() {
 		clock_t cnp_0, cnp_1;
 		cnp_0 = clock();
